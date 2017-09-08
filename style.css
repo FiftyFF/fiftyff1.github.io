@@ -1,0 +1,199 @@
+body{
+      background-image: url("back.jpg");
+}
+
+html,body {
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 1em 2em;
+	font-size: 18px;
+	color: white;
+	}
+
+h1 {
+	opacity: 0.5;
+	text-align: center;
+	font-weight: 200;
+	margin-top: -20px;
+
+}
+h1 { font-size: 3.5em; }
+
+
+.logo {
+	margin-top: 15%;
+	opacity: 0.6;
+  color: #FF6969;
+}
+
+.images {
+position: absolute;
+margin-left: 46%;
+margin-top: 10px;
+}
+
+.button {
+	position: absolute;
+	z-index: 5;
+	outline: none;
+	border: none;
+	width: 100px;
+	height: 100px;
+	font-size: 36px;
+	border-radius: 50%;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	background: #66ccff;
+	color: white;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.openMenu {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: auto 0;
+  cursor: pointer;
+}
+.openMenu:hover {
+  font-size: 26px;
+  transition: all 0.4s;
+}
+
+.otherButton1 {
+  top: calc(50% + 30px);
+  left: calc(50% + 130px);
+  background: #ff66cc;
+  opacity: 0.5;
+}
+
+.otherButton2 {
+  top: calc(50% + 30px);
+  left: calc(50% - 200px);
+  background: #ff66cc;
+  opacity: 0.5;
+}
+
+.otherButton3 {
+  top: calc(50% + 30px);
+  left: calc(50% + 30px);
+  background: #ff66cc;
+  opacity: 0.5;
+}
+
+.otherButton4 {
+  top: calc(50% + 30px);
+  left: calc(50% - 100px);
+  background: #ff66cc;
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes rubberEffectHome {
+  0% {transform: scale(1); top: calc(50% - 30px); left: calc(50% - 30px);}
+  10% {transform: scaleX(0.65) scaleY(1.35); top: calc(50% - 30px); left: calc(50% - 30px);}
+  20% {transform: scaleX(1.05) scaleY(0.95); top: calc(50% - 50px); left: calc(50% - 50px);}
+  30% {transform: scaleX(1.25) scaleY(0.75); top: calc(50% - 70px); left: calc(50% - 70px);}
+  40% {transform: scaleX(0.75) scaleY(1.25); top: calc(50% - 90px); left: calc(50% - 80px);}
+  60% {transform: scaleX(1.15) scaleY(0.85); top: calc(50% - 100px); left: calc(50% - 100px);}
+  100% {transform: scale(1);}
+}
+
+
+@keyframes rubberEffectAbout {
+  0% {transform: scale(1); top: calc(50% - 30px); left: calc(50% - 30px);}
+  10% {transform: scaleX(0.65) scaleY(1.35); top: calc(50% - 30px); left: calc(50% - 30px);}
+  20% {transform: scaleX(1.05) scaleY(0.95); top: calc(50% - 50px); left: calc(50% - 20px);}
+  30% {transform: scaleX(1.25) scaleY(0.75); top: calc(50% - 70px); left: calc(50% + 10px);}
+  40% {transform: scaleX(0.75) scaleY(1.25); top: calc(50% - 90px); left: calc(50% + 20px);}
+  60% {transform: scaleX(1.15) scaleY(0.85); top: calc(50% - 100px); left: calc(50% + 30px);}
+  100% {transform: scale(1);}
+}
+@keyframes rubberEffectWork {
+  0% {transform: scale(1); top: calc(50% - 30px); left: calc(50% - 30px);}
+  10% {transform: scaleX(0.65) scaleY(1.35); top: calc(50% - 30px); left: calc(50% - 30px);}
+  20% {transform: scaleX(1.05) scaleY(0.95); top: calc(50% + 10px); left: calc(50% - 20px);}
+  30% {transform: scaleX(1.25) scaleY(0.75); top: calc(50% + 20px); left: calc(50% - 10px);}
+  40% {transform: scaleX(0.75) scaleY(1.25); top: calc(50% + 25px); left: calc(50% + 20px);}
+  60% {transform: scaleX(1.15) scaleY(0.85); top: calc(50% + 30px); left: calc(50% + 30px);}
+  100% {transform: scale(1);}
+}
+@keyframes rubberEffectContact {
+  0% {transform: scale(1); top: calc(50% - 30px); left: calc(50% - 30px);}
+  10% {transform: scaleX(0.65) scaleY(1.35); top: calc(50% - 30px); left: calc(50% - 30px);}
+  20% {transform: scaleX(1.05) scaleY(0.95); top: calc(50% + 10px); left: calc(50% - 50px);}
+  30% {transform: scaleX(1.25) scaleY(0.75); top: calc(50% + 20px); left: calc(50% - 70px);}
+  40% {transform: scaleX(0.75) scaleY(1.25); top: calc(50% + 25px); left: calc(50% - 90px);}
+  60% {transform: scaleX(1.15) scaleY(0.85); top: calc(50% + 30px); left: calc(50% - 100px);}
+  100% {transform: scale(1);}
+}
+.otherButton1 {
+  animation-name: rubberEffectHome;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.otherButton2 {
+  animation-name: rubberEffectAbout;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+.otherButton3 {
+  animation-name: rubberEffectWork;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.otherButton4 {
+  animation-name: rubberEffectContact;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes flipEffect {
+  0% {transform: perspective(800px) translateZ(0) rotateY(0) scale(1);animation-timing-function: ease-out;}
+  40% {transform: perspective(800px) translateZ(110px) rotateY(170deg) scale(1);animation-timing-function: ease-out;}
+  50% {transform: perspective(800px) translateZ(110px) rotateY(190deg) scale(1);animation-timing-function: ease-in;}
+  80% {transform: perspective(800px) translateZ(0) rotateY(360deg) scale(.95);animation-timing-function: ease-in;}
+  100% {transform: perspective(800px) translateZ(0) rotateY(360deg) scale(1);animation-timing-function: ease-in;}
+}
+
+.flip-active {
+  backface-visibility: visible;
+  animation-name: flipEffect;
+  animation-duration: 1.5s;
+}
+
+.pulse-button {
+
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: #e84c3d;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/jonathanlarradet_copy.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulse-button:hover 
+{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
